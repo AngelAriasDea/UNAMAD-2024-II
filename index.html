@@ -16,6 +16,7 @@
                 <li>Procesos</li>
                 <li>Galeria</li>
                 <li>Intranet</li>
+                <li>Contactanos</li>
             </ul>
         </nav>
     </header>
@@ -40,6 +41,69 @@
                 height="275">
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto 
                     placeat porro dolorum. Odio incidunt voluptas earum, itaque voluptatibus impedit quae veniam officia aliquam fugit a esse quaerat, molestias blanditiis voluptatum.</p>
+            </div>
+        </section>
+        <section>
+            <h2>Contactanos</h2>
+            <div>
+                <img src="semana03/assets/Contactanos.jpeg" alt="Contacto"
+                width="50"
+                height="50">
+            </div>
+            <div>
+                <form action="">
+                    <p>
+                        <label for="">Registro</label>
+                        <label for="">
+                            <input type="radio" name="titulo" value="sr">
+                            Sr
+                        </label>
+                        <label for="">
+                            <input type="radio" name="titulo" value="sra">
+                            Sra
+                        </label>
+                        <label for="">
+                            <input type="radio" name="titulo" value="srta">
+                            Srta
+                        </label>
+                    </p>
+                    <p>
+                        <label for="">Nombres</label><br>
+                        <input type="text" name="nombres" pattern="[A-Za-zÀ-ÿ]+" required="Solo se aceptan letras">
+                    </p>
+                    <p>
+                        <label for="">Apellidos</label><br>
+                        <input type="text" name="apellidos" pattern="[A-Za-zÀ-ÿ\s]+" required="Solo se aceptan Letras"> 
+                    </p>
+                    <p>
+                        <label for="">email</label><br>
+                        <input type="email" name="enamil" placeholder="Ariasdeangelren@unamad.edu.pe" title="Necesario llenar el Campo" required>
+                    </p>
+                    <p>
+                        <label for="">Direccion</label><br>
+                        <input type="text" name="direccion">
+                    </p>
+                    <p></p>
+                        <label for="">Telefono</label><br>
+                        <input type="number" pattern="[0-9]+" name="fono">
+                    </p>
+                    p
+                    <p>
+                        <label for="">Regiones</label><br>
+                        <select >
+                            <option>Madre de Dios</option>
+                            <option>Cusco</option>
+                            <option>Puno</option>
+                            <option>Arequipa</option>
+                            <option>Apurimac</option>
+                            <option>Ucayali</option>
+                        </select>
+                    </p>
+                    <p>
+                        <button>Enviar</button>
+                        <button type="reset">Reiniciar</button>
+                    </p>
+                </form>
             </div>
         </section>
     </main>
