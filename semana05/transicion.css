@@ -14,3 +14,50 @@ div{
 div:hover{
     background: gold;
 }
+
+/*
+    .titulo {
+        color: white;
+        background: darkcyan;
+        transition-property: color;
+        transition-duration: 0.5s;
+        padding: 10px;
+        transition-timing-function: ease;
+        transition-delay: 1s;
+    }
+*/
+
+.titulo{
+    animation-duration: 2s;
+    animation-name: tituloAnimacion;
+    padding: 10px;
+}
+
+@keyframes tituloAnimacion{
+
+    from{
+        color: white;
+        background: darkcyan;
+    }
+
+    to{
+        color: blue;
+        background:gold; ;
+    }
+}
+
+
+.moverIZaDR {
+    position: relative;
+    animation: moverTexto 5s ease-in-out forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moverTexto {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 0%;
+    }
+}
