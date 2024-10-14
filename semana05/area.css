@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    background:  lightgray;
+    min-height: 200px;
+    display: grid;
+    grid-template-areas: 
+    "encabezado encabezado"
+    "menu noti"
+    "pie pie";
+}
+
+.contenedor header{
+    grid-area: encabezado;
+    background-color: orange;
+}
+
+.contenedor .lista{
+    grid-area: menu;
+    background-color: green;
+}
+
+.contenedor .noticia{
+    grid-area:noti;
+    background-color: darkkhaki;
+}
+
+.contenedor footer{
+    grid-area: pie;
+    background-color: darkorchid;
+}
