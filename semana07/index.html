@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Javascript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <h2> Ejercicio 1 </h2>
+        <p>
+            Crea un programa que solicite al usuario su nombre, 
+            apellido y edad para luego presentar un saludo amigable, 
+            mostrando la información ingresada. Por ejemplo: "Buen día,
+             soy Denys Jaramillo y tengo 41 años." El resultado se mostrará
+              en una alerta o en la consola
+        </p>
+        <form id="ejercicio01">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+            
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <pre id="E1"></pre>
+        <br>
+
+        <h2> Ejercicio 2 </h2>
+        <p>
+            Escribe un programa que solicite al usuario un número y
+             determine si es positivo, negativo o cero, imprimiendo 
+             el resultado correspondiente.
+        </p>
+        <form id="ejercicio02">
+            <label for="numero">Numero:</label>
+            <input type="number" id="numero" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <pre id="E  2"></pre>
+
+        <br>
+
+        <h2> Ejercicio 3 </h2>
+        <p>
+            Crea un programa que reciba un monto a pagar y calcule 
+            su precio final, incluyendo un impuesto al valor agregado (IGV)
+             del 18%. El programa mostrará el monto total a pagar después de
+             aplicar el impuesto.
+        </p>
+        <form id="ejercicio03">
+            <label for="monto">Monto a pagar:</label>
+            <input type="number" id="monto" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <pre id="E3"></pre>
+        <br>
+
+        <h2> Ejercicio 4 </h2>
+        <p>
+            Desarrolla un programa que determine el monto equitativo a pagar 
+            por cada uno de los 3 amigos después de salir a comer. El programa
+             solicitará el monto total a pagar y calculará cuánto debe pagar cada amigo 
+             para que todos contribuyan por igual. Luego, mostrará el resultado mediante 
+             una alerta o en la consola.
+        </p>
+        <form id="ejercicio04">
+            <label for="montoTotal">Monto total a pagar:</label>
+            <input type="number" id="montoTotal" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <pre id="E4"></pre>
+
+        <br>
+
+        <h2> Ejercicio 5 </h2>
+        <p>
+            Desarrolla un programa que reciba dos cadenas de texto, 'a' y 'b', 
+            y devuelva una nueva cadena combinando ambas de la siguiente manera: 
+            corta + larga + corta. La cadena más corta estará en el exterior y la más
+             larga en el interior. Por ejemplo, si las cadenas son "bye" y "adios", 
+             el resultado sería "byeadiosbye".
+        </p>
+        <form id="ejercicio05">
+            <label for="cadena1">Ingresar Cadena A:</label>
+            <input type="text" id="cadena1" required>
+
+            <label for="cadena2">Ingresar Cadena B:</label>
+            <input type="text" id="cadena2" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <pre id="E5"></pre>
+
+        <br>
+
+        <h2> Ejercicio 6 </h2>
+        <p>
+            Desarrolla un programa que solicite la base y la altura de dos triángulos. 
+            Luego calculará y comparará el área de ambos triángulos, mostrando también
+             cuál de ellos tiene el área más grande.
+        </p>
+
+        <form id="ejercicio06">
+            <label for="base1"> Base 1:</label>
+            <input type="number" id="base1" required>
+
+            <label for="altura1"> Altura 1:</label>
+            <input type="number" id="altura1" required>
+
+            <label for="base2"> Base 2:</label>
+            <input type="number" id="base2" required>
+
+            <label for="altura2">Altura 2:</label>
+            <input type="number" id="altura2" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <pre id="E6"></pre>
+
+        <br>
+
+        <h2>Ejercicio 1 de Formulario</h2>
+        <p>
+        Ingrese la cantidad de múltiplos pares de la tabla de multiplicar del 7 que desea mostrar.
+        </p>
+        <input type="number" id="cantidad" placeholder="Ingrese cantidad de múltiplos que desee mostrar" min="1">
+        <button onclick="Tabladel7()">Mostrar</button>
+        <pre id="outpsut1"></pre>
+
+        <br>
+
+        <h2>Ejercicio 2: Cálculo de Suma</h2>
+        <p>
+        Ingrese un número para calcular la suma de todos los valores menores a él, comenzando desde 1.
+        </p>
+        <form onsubmit="sumaMenores(); return false;">
+        <label for="numero_suma">Número:</label>
+        <input type="number" id="numero_suma" placeholder="Ingrese un número" required>
+        <button type="submit">Calcular</button>
+        </form>
+        <pre id="output2"></pre>
+
+
+        <br>
+
+        <h2> Ejercicio 3 de Formulario </h2>
+        <p>
+            Tiene un catálogo de productos con estos precios, 50, 20, 10, 100, 30, 10
+	        Indique cuál es su presupuesto y según el orden en que están indique 	
+            cuánto gastará Ej. si mi presupuesto es 90 considerare 50, 20 y 10.
+        </p>
+        <input type="number" id="presupuesto" placeholder="Ingrese su presupuesto">
+        <button onclick="calcularGasto()">Calcular gasto</button>
+        <pre id="output3"></pre>
+
+        <br>
+
+        <h2>Ejercicio 1 de Arrays</h2>
+        <p>
+         Ingrese un valor mínimo para ver los productos que superan ese precio.
+        </p>
+        <label for="precioMinimo">Precio mínimo (S/):</label>
+        <input type="number" id="precioMinimo" placeholder="Ingrese un monto" required>
+        <button onclick="filtro()">Mostrar Productos</button>
+        <pre id="resultado"></pre>
+
+        <h2> Ejercicio 2 de arrays </h2>
+        <p>
+            Calcular el promedio de los alumnos, de acuerdo al siguiente arreglo.
+        </p>
+        <button onclick="Promedio()">Mostrar Promedios</button>
+        <pre id="resultado2"></pre>
+        
+    </main>
+    <script src="JavaScrip/ejercicio01.js"></script>
+    <script src="JavaScrip/ejercicio02.js"></script>
+    <script src="JavaScrip/ejercicio03.js"></script>
+    <script src="JavaScrip/ejercicio04.js"></script>
+    <script src="JavaScrip/ejercicio05.js"></script>
+    <script src="JavaScrip/ejercicio06.js"></script>
+    <script src="JavaScrip/Ejercicio-de-arrays-01.js"></script>
+    <script src="JavaScrip/Ejercicio-de-arrays-02.js"></script>
+    <script src="JavaScrip/Ejercicio-formulario-03.js"></script>
+    <script src="JavaScrip/Ejercicio-formulario-02.js"></script>
+    <script src="JavaScrip/Ejercicio-formulario-01.js"></script>
+</body>
+</html>
